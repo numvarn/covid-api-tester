@@ -11,13 +11,16 @@ endpoint = 'api/checkedin'
 url = os.path.join(base, endpoint)
 
 myobj = {
-    'account' : 1,
-    'latitude' : 15.143479, 
-    'longitude' : 104.256276, 
+    'account' : 6,
+    'latitude' : 15.246758,
+    'longitude' : 104.870461,
     'status' : 1,
 }
 
 response = requests.post(url, data=myobj, headers={'Authorization': token})
 
-print("Checked-in")
+print("Checked-in \n")
+data = response.json()
+pprint(data)
+print("\n")
 
