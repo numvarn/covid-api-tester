@@ -12,7 +12,7 @@ url = os.path.join(base, endpoint)
 
 myobj = {
     "account" : '1',
-    "age" : '38',
+    "age" : '40',
     "home_subdistrict" : "หนองครก",
     "home_district" : "อำเภอเมืองศรีสะเกษ",
     "home_province" : "ศรีสะเกษ",
@@ -37,7 +37,7 @@ myobj = {
     "q5_risk_etc": "",
     "q5_risk_date": "",
 
-    "q6_symptom": ["มีไข้", "ไอ", "จาม"],
+    "q6_symptom": "มีไข้,ไอ,จาม,หายใจลำบาก หอบเหนื่อย",
 
     "q7": "no",
     "q7_place": "",
