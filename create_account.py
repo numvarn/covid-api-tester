@@ -8,11 +8,11 @@ endpoint = 'api/regis'
 url = os.path.join(base, endpoint)
 
 myobj = {
-    'username' : 'kewarin.p@sskru.ac.th',
+    'username' : 'sirikanlaya.p@sskru.ac.th',
     'password' : 'numvarn',
-    'email' : 'kewarin.p@sskru.ac.th',
-    'first_name' : 'เกวรินทร์',
-    'last_name' : 'ประมวล',
+    'email' : 'sirikanlaya.p@sskru.ac.th',
+    'first_name' : 'สิริกัลยา',
+    'last_name' : 'สุขขี',
 }
 
 response = requests.post(url, data=myobj)

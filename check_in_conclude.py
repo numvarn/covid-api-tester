@@ -16,8 +16,8 @@ import os
 Token = None
 User_ID = None
 
-# base = 'https://ssk-covid19.herokuapp.com'
-base = 'http://127.0.0.1:8000'
+base = 'https://ssk-covid19.herokuapp.com'
+# base = 'http://127.0.0.1:8000'
 
 '''
 Step 1. Log-in and get Token
@@ -27,8 +27,8 @@ endpoint_login = 'api/login'
 url = os.path.join(base, endpoint_login)
 
 myobj = {
-    'username': 'sirikanlaya.s@sskru.ac.th',
-    'password': 'numvarn'
+    'username': 'admin',
+    'password': 'sskrucovid2019'
 }
 
 response = requests.post(url, data=myobj)
@@ -72,8 +72,8 @@ url = os.path.join(base, endpoint_check_in)
 
 myobj = {
     'account' : User_ID,
-    'latitude' : 15.074495, 
-    'longitude' : 104.369057, 
+    'latitude' : 15.116226,
+    'longitude' : 104.323539,
     'status' : 1,
 }
 

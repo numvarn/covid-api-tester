@@ -2,7 +2,7 @@ import requests
 from pprint import pprint
 import os
 
-token = 'Token d035525fda947a91ac9017aa15e4f4664528ea02'
+token = 'Token 62b62f18f5a7024c4a94035a7bc32ba3704d80dd'
 
 # base = 'http://127.0.0.1:8000'
 base = 'https://ssk-covid19.herokuapp.com'
@@ -11,7 +11,7 @@ endpoint = 'api/checkedin'
 url = os.path.join(base, endpoint)
 
 myobj = {
-    'account' : 6,
+    'account' : 1,
     'latitude' : 15.246758,
     'longitude' : 104.870461,
     'status' : 1,

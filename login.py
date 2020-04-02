@@ -8,8 +8,8 @@ endpoint = 'api/login'
 url = os.path.join(base, endpoint)
 
 myobj = {
-    'username': 'admin',
-    'password': 'sskrucovid2019'
+    'username': 'sirikanlaya.p@sskru.ac.th',
+    'password': 'numvarn'
 }
 
 response = requests.post(url, data=myobj)

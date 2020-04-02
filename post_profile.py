@@ -2,18 +2,20 @@ import requests
 from pprint import pprint
 import os
 
-token = 'Token d035525fda947a91ac9017aa15e4f4664528ea02'
+token = 'Token 62b62f18f5a7024c4a94035a7bc32ba3704d80dd'
+
+# localhost token
+# token = 'Token d035525fda947a91ac9017aa15e4f4664528ea02'
 
 # base = 'http://127.0.0.1:8000'
 base = 'https://ssk-covid19.herokuapp.com'
 endpoint = 'post/profile'
-
 url = os.path.join(base, endpoint)
 
 myobj = {
-    'account': 4,
-    'gender': 'หญิง',
-    'age': 38,
+    'account': 1,
+    'gender': 'ชาย',
+    'age': 39,
     'nationality': 'ไทย',
     'occupation': 'อาจารย์',
     'office_address': '319 ถ.ไทพานทา',
@@ -25,9 +27,8 @@ myobj = {
     'home_subdistrict': 'หนองครก',
     'home_district': 'เมือง',
     'home_province': 'ศรีสะเกษ',
-    'mobile_phone': '0889152456',
+    'mobile_phone': '0842982456',
 }
-
 
 response = requests.post(url, data=myobj, headers={'Authorization': token})
 data = response.json()
