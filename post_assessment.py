@@ -11,8 +11,8 @@ endpoint = 'post/assessment'
 url = os.path.join(base, endpoint)
 
 myobj = {
-    "account" : '1',
-    "age" : '40',
+    "account" : 1,
+    "age" : 43,
     "home_subdistrict" : "หนองครก",
     "home_district" : "อำเภอเมืองศรีสะเกษ",
     "home_province" : "ศรีสะเกษ",
@@ -28,7 +28,7 @@ myobj = {
     "q3": "no",
     "q3_relation": "",
     "q3_relation_detail": "",
-    "q3_patient_type": '0',
+    "q3_patient_type": 1,
 
     "q4": "no",
 
@@ -37,14 +37,18 @@ myobj = {
     "q5_risk_etc": "",
     "q5_risk_date": "",
 
-    "q6_symptom": "มีไข้,ไอ,จาม,หายใจลำบาก หอบเหนื่อย",
+    "q6_symptom": "จาม,ไอ,หายใจลำบาก หอบเหนื่อย",
 
     "q7": "no",
     "q7_place": "",
     "q7_place_des": "",
 }
 
+# js = json.loads(json.dumps(myobj))
+# pprint(js)
+
 response = requests.post(url, data=myobj)
+
 data = response.json()
 pprint(data)
 
