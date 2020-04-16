@@ -3,9 +3,9 @@ from requests.auth import HTTPBasicAuth
 from pprint import pprint
 import os
 
-url = 'https://ssk-covid19.herokuapp.com'
+url = 'http://127.0.0.1:8000'
 endpoint = 'get/myuser'
-token = 'Token d035525fda947a91ac9017aa15e4f4664528ea02'
+token = "Token "
 
 response = requests.get(os.path.join(url, endpoint), headers={'Authorization': token})
 data = response.json()

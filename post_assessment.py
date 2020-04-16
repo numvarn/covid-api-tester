@@ -3,16 +3,14 @@ from pprint import pprint
 import os
 import json
 
-# base = 'http://127.0.0.1:8000'
-
-base = 'https://ssk-covid19.herokuapp.com'
+base = 'http://127.0.0.1:8000'
 endpoint = 'post/assessment'
 
 url = os.path.join(base, endpoint)
 
 myobj = {
     "account" : 1,
-    "age" : 43,
+    "age" : 60,
     "home_subdistrict" : "หนองครก",
     "home_district" : "อำเภอเมืองศรีสะเกษ",
     "home_province" : "ศรีสะเกษ",
@@ -44,8 +42,8 @@ myobj = {
     "q7_place_des": "",
 }
 
-# js = json.loads(json.dumps(myobj))
-# pprint(js)
+js = json.loads(json.dumps(myobj))
+# print(js)
 
 response = requests.post(url, data=myobj)
 

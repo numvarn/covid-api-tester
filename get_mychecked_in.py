@@ -3,8 +3,9 @@ from requests.auth import HTTPBasicAuth
 from pprint import pprint
 import os
 
+
 url = 'http://127.0.0.1:8000'
-endpoint = 'get/myprofile'
+endpoint = 'get/mycheckedin'
 token = 'Token '
 
 response = requests.get(os.path.join(url, endpoint), headers={'Authorization': token})

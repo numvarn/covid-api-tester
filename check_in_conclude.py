@@ -16,8 +16,7 @@ import os
 Token = None
 User_ID = None
 
-base = 'https://ssk-covid19.herokuapp.com'
-# base = 'http://127.0.0.1:8000'
+base = 'http://127.0.0.1:8000'
 
 '''
 Step 1. Log-in and get Token

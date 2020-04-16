@@ -2,7 +2,7 @@ import requests
 from pprint import pprint
 import os
 
-base = 'https://ssk-covid19.herokuapp.com'
+base = 'http://127.0.0.1:8000'
 endpoint = 'api/login'
 
 url = os.path.join(base, endpoint)
